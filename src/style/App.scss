@@ -1,0 +1,48 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$color-one: #8EA998;
+$color-two: #E7DFAE;
+$color-three: #C58E4D;
+$color-four: #978D4F;
+$color-five: #4B3414;
+$color-six: #D9D9D9;
+
+header {
+  background-color: $color-one;
+  height: 25vw;
+}
+
+.van-container {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  z-index: 1;
+  right: -15px;
+  position: relative;
+  top: 0px;
+}
+
+.van{
+  height: 27vw;
+  display:flex;
+}
+
+.title {
+  z-index: 2;
+  background-color: $color-one;
+  top: -346px;
+  position: relative;
+  width: 60vw;
+  height: 25vw;
+}
+
+.van-fade {
+  width: 40vw;
+  height: 25vw;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0), #8EA998);
+  position: relative;
+  top: 0px;
+  right: -39px;
+  z-index: 3;
+}
