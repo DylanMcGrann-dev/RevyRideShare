@@ -1,0 +1,84 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+$color-one: #8EA998;
+$color-two: #E7DFAE;
+$color-three: #C58E4D;
+$color-four: #978D4F;
+$color-five: #4B3414;
+$color-six: #D9D9D9;
+
+header {
+  background-color: $color-one;
+  height: 25vw;
+  padding: 0 !important;
+}
+
+.van-container {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  z-index: 1;
+  right: -18vw;
+  position: relative;
+  top: 0px;
+}
+
+.van{
+  height: 27vw;
+  display:flex;
+}
+
+.title {
+  z-index: 2;
+  background-color: #8EA998;
+  top: -15px;
+  position: relative;
+  width: 62vw;
+  height: 25vw;
+  right: 16vw;
+}
+
+.van-fade {
+  width: 17vw;
+  height: 25vw;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #8ea998b0, #8EA998);
+  position: relative;
+  top: -15px;
+  right: -23.5vw;
+  z-index: 3;
+}
+
+.layered {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.layered > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.grey-bar {
+  background-color: #D9D9D9;
+  height: 5vw;
+  position: relative;
+  top: 14vw;
+  z-index: 4;
+  width: 100%
+}
+
+.info-bar {
+  z-index: 5;
+  height: 9vw;
+  width: 50vw;
+  background-color: $color-three;
+  position: relative;
+  top: 11vw;
+  align-content: center;
+}
+
+.info-bar > * {
+  align-content: center;
+}
