@@ -1,16 +1,17 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$color-one: #8EA998;
-$color-two: #E7DFAE;
-$color-three: #C58E4D;
-$color-four: #978D4F;
-$color-five: #4B3414;
-$color-six: #D9D9D9;
+$color-one: #8ea998;
+$color-two: #e7dfae;
+$color-three: #c58e4d;
+$color-four: #978d4f;
+$color-five: #4b3414;
+$color-six: #d9d9d9;
 
 header {
   background-color: $color-one;
   height: 25vw;
   padding: 0 !important;
+  margin: 0 0 4.5vw 0;
 }
 
 .van-container {
@@ -24,14 +25,14 @@ header {
   top: 0px;
 }
 
-.van{
+.van {
   height: 27vw;
-  display:flex;
+  display: flex;
 }
 
 .title {
   z-index: 2;
-  background-color: #8EA998;
+  background-color: #8ea998;
   top: -15px;
   position: relative;
   width: 62vw;
@@ -42,7 +43,12 @@ header {
 .van-fade {
   width: 17vw;
   height: 25vw;
-  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), #8ea998b0, #8EA998);
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    #8ea998b0,
+    #8ea998
+  );
   position: relative;
   top: -15px;
   right: -23.5vw;
@@ -61,24 +67,75 @@ header {
 }
 
 .grey-bar {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   height: 5vw;
   position: relative;
   top: 14vw;
   z-index: 4;
-  width: 100%
+  width: 100%;
 }
 
 .info-bar {
   z-index: 5;
   height: 9vw;
-  width: 50vw;
+  width: 62vw;
   background-color: $color-three;
   position: relative;
   top: 11vw;
   align-content: center;
+  justify-self: center;
+  padding: 0 14px;
+  border-radius: 4px;
 }
 
-.info-bar > * {
+.info-bar > .row {
   align-content: center;
+
+  &.row > * {
+    align-self: center;
+  }
+}
+
+.circle-svg {
+  padding: 0;
+  flex: 0 0 80px;
+  width: 60px;
+}
+
+.info-bar p {
+  margin: 0;
+  color: $color-two;
+}
+
+main {
+  background-color: $color-six;
+  margin: 24px 0 0 0;
+  padding: 16px 0;
+}
+
+.info-box {
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.download-box {
+  width: 42vw;
+  height: 11vw;
+}
+
+h4 {
+  color: $color-four;
+}
+
+main > div {
+  margin: 10px 0;
+}
+
+.ride-w-friends {
+  width: 50vw;
+  height: 19vw;
 }
