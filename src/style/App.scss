@@ -12,6 +12,7 @@ header {
   height: 29vw;
   padding: 0 !important;
   margin: 0 0 0 0;
+  overflow-x: clip;
 }
 
 .van-container {
@@ -130,11 +131,54 @@ h4 {
   color: $color-four;
 }
 
+h2 {
+  margin: 0;
+}
+
 main > div {
   padding: 13px 0;
 }
 
 .ride-w-friends {
-  width: 50vw;
+  width: 49vw;
   height: 19vw;
+  margin: 0 0 0 26px;
+  padding: 26px;
+}
+
+.ride-w-friends-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: inherit;
+  padding: 0 68px;
+}
+
+.info-row {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-box {
+  height: 14vw;
+  width: 22vw;
+  color: $color-two;
+  background-color: $color-three;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 60px 0 0;
+}
+
+.price-info {
+  width: 31vw;
+  height: 5vw;
+  position: relative;
+  bottom:10px;
 }
