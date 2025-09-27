@@ -7,6 +7,10 @@ $color-four: #978d4f;
 $color-five: #4b3414;
 $color-six: #d9d9d9;
 
+body {
+  background-color: #d9d9d9;
+}
+
 header {
   background-color: $color-one;
   height: 29vw;
@@ -15,15 +19,32 @@ header {
   overflow-x: clip;
 }
 
+footer {
+  background-color: $color-one;
+  height: 15vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3vw 0 0 0;
+}
+
+p {
+  color: $color-five;
+}
+
+h2 {
+  font-size: 3vw;
+  margin: 0;
+}
 .van-container {
   display: flex;
   align-content: flex-start;
   justify-content: flex-end;
   flex-wrap: wrap;
   z-index: 1;
-  right: -18vw;
-  position: relative;
-  top: 0px;
+  right: -5px;
+  position: absolute;
+  top: -9px;
 }
 
 .van {
@@ -34,11 +55,19 @@ header {
 .title {
   z-index: 2;
   background-color: #8ea998;
-  top: -15px;
-  position: relative;
-  width: 62vw;
-  height: 25vw;
-  right: 16vw;
+  top: 0px;
+  position: absolute;
+  width: 65vw;
+  height: 24vw;
+  left: 0vw;
+  display: flex;
+  padding: 0 0 5vw 4vw;
+}
+
+.title > h1 {
+  padding: 2vw 0 0 0;
+  font-size: 5vw;
+  color: $color-two;
 }
 
 .van-fade {
@@ -60,6 +89,7 @@ header {
   display: grid;
   justify-items: center;
   align-items: center;
+  position: relative;
 }
 
 .layered > * {
@@ -99,18 +129,18 @@ header {
 
 .circle-svg {
   padding: 0;
-  flex: 0 0 80px;
-  width: 60px;
+  flex: 0 0 7vw;
 }
 
 .info-bar p {
   margin: 0;
   color: $color-two;
+  font-size: 1.5vw;
 }
 
 main {
   background-color: $color-six;
-  margin: 13px 0 0 0;
+  margin: 3vw 0 0 0;
 }
 
 .info-box {
@@ -122,42 +152,71 @@ main {
   align-items: center;
 }
 
+.info-box > p {
+  font-size: 1.5vw;
+}
 .download-box {
   width: 42vw;
   height: 11vw;
 }
 
-h4 {
-  color: $color-four;
+.download-btn {
+  flex: 0 0 5vw;
 }
 
-h2 {
-  margin: 0;
+h4 {
+  color: $color-four;
+  font-size: 2vw;
 }
 
 main > div {
-  padding: 13px 0;
+  padding: 3vw 0;
 }
 
 .ride-w-friends {
   width: 49vw;
-  height: 19vw;
-  margin: 0 0 0 26px;
+  height: 22vw;
+  margin: 0 0 0 4vw;
   padding: 26px;
 }
 
-.ride-w-friends-title {
-  display: flex;
+.ride-w-friends > .info-box-title {
   justify-content: space-evenly;
+}
+
+.ride-w-friends > p {
+  text-align: center;
+}
+
+.info-box-title > svg {
+  flex: 0 0 13vw;
+}
+
+.info-box-title {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: inherit;
-  padding: 0 68px;
+  width: 100%;
+  color: $color-five;
 }
 
 .info-row {
   flex-direction: row;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.info-row:nth-of-type(3) {
+  position: relative;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10vw 0 0;
+  position: relative;
 }
 
 .price-box {
@@ -167,18 +226,347 @@ main > div {
   background-color: $color-three;
   border-radius: 4px;
   z-index: 2;
-}
-
-.price-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px 60px 0 0;
+  padding: 0 10px;
+}
+.price-box > div:nth-child(1) {
+  font-size: 15vw;
+  font-weight: 600;
+  line-height: 13vw !important;
+}
+.price-box > div:nth-child(2) {
+  font-size: 5vw;
+  font-weight: 600;
 }
 
 .price-info {
   width: 31vw;
   height: 5vw;
+  position: absolute;
+  bottom: -4vw;
+  font-size: 2vw;
+  color: $color-five;
+}
+
+.map {
   position: relative;
-  bottom:10px;
+  right: 0;
+  z-index: 1;
+}
+
+.map > img {
+  width: 51vw;
+}
+
+.service-info {
+  width: 52vw;
+  height: 34vw;
+  position: absolute;
+  right: 0;
+  padding: 0 30px 0 100px;
+}
+
+.service-info > .info-box-title {
+  padding: 0 5vw 0 0;
+}
+
+.positioning{
+  position: relative;
+}
+
+.footer-links {
+  color: $color-two;
+  text-align: center;
+  font-size: 1.75vw;
+}
+#phone {
+  display: none;
+}
+
+#computer {
+  display: flex;
+}
+
+@include media-breakpoint-up(xxl) {
+  header {
+    height: 406px;
+    width: 1400px;
+  }
+
+  footer {
+    height: 210px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+  #root {
+    max-width: 1400px;
+    display: flex;
+    justify-self: center;
+  }
+
+  .container-fluid {
+    width: 1400px;
+  }
+
+  .van {
+    height: 378px;
+  }
+
+  .title {
+    width: 910px;
+    height: 336px;
+    padding: 0 0 70px 56px;
+  }
+
+  .title > h1 {
+    font-size: 70px;
+    padding: 28px 0 0 0;
+  }
+
+  .van-fade {
+    width: 238px;
+    height: 350px;
+    top: -15px;
+    right: -329px;
+  }
+
+  .grey-bar {
+    height: 70px;
+    top: 196px;
+  }
+
+  .info-bar {
+    height: 126px;
+    width: 868px;
+    top: 154px;
+  }
+
+  .circle-svg {
+    flex: 0 0 98px;
+  }
+
+  .info-bar p {
+    font-size: 21px;
+  }
+
+  main {
+    margin: 42px 0 0 0;
+  }
+
+  .info-box > p {
+    font-size: 21px;
+  }
+
+  .download-box {
+    width: 588px;
+    height: 154px;
+  }
+
+  .download-btn {
+    flex: 0 0 70px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  main > div {
+    padding: 42px 0;
+  }
+
+  .ride-w-friends {
+    width: 686px;
+    height: 308px;
+    margin: 0 0 0 56px;
+  }
+
+  .info-box-title > svg {
+    flex: 0 0 182px;
+  }
+
+  .price-container {
+    margin: 0px 140px 0 0;
+  }
+
+  .price-box {
+    height: 196px;
+    width: 308px;
+  }
+
+  .price-box > div:nth-child(1) {
+    font-size: 210px;
+    line-height: 182px !important;
+  }
+
+  .price-box > div:nth-child(2) {
+    font-size: 70px;
+  }
+
+  .price-info {
+    width: 434px;
+    height: 70px;
+    bottom: -56px;
+    font-size: 28px;
+  }
+
+  .map > img {
+    width: 714px;
+  }
+
+  .service-info {
+    width: 728px;
+    height: 476px;
+  }
+
+  .service-info > .info-box-title {
+    padding: 0 70px 0 0;
+  }
+
+  .footer-links {
+    font-size: 24.5px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #phone {
+    display: flex;
+  }
+
+  #computer {
+    display: none;
+  }
+
+  .title {
+    height: 29vw;
+    padding: 0 0 5vw 0;
+  }
+
+  .grey-bar {
+    top: 15vw;
+  }
+
+  .info-bar {
+    height: 22vw;
+    width: 100%;
+    top: -5vw;
+    padding: 0 2vw 0 3vw;
+    border-radius: 0;
+  }
+
+  .small-info-bar {
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+  }
+
+  .small-info-bar > .col {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+  }
+  .circle-svg {
+    padding: 0;
+    flex: 0 0 9vw;
+    width: 4vw;
+  }
+
+  .info-bar p {
+    margin: 0;
+    font-size: 2.5vw;
+    align-self: anchor-center;
+  }
+
+  .price-container {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 1.25vw 0;
+  }
+
+  .price-box {
+    height: unset;
+    width: unset;
+    color: #e7dfae;
+    background-color: #c58e4d;
+    border-radius: 4px;
+    z-index: 2;
+    display: flex;
+    padding: 0 10px;
+  }
+
+  .price-box > div:nth-child(1) {
+    font-size: 24vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .price-box > div:nth-child(2) {
+    font-size: 7vw;
+  }
+
+  .cost-text {
+    font-size: 3vw;
+    padding: 0 0 0 1.5vw;
+  }
+
+  .download-box {
+    width: 92vw;
+    height: 18vw;
+  }
+  main > div:nth-child(2) {
+    padding: 0 0 3vw 0;
+  }
+  main {
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 3vw;
+  }
+
+  .download-btn {
+    flex: 0 0 8vw;
+  }
+
+  .info-box-row {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 92vw;
+    padding: 3.5vw;
+    height: 40vw;
+  }
+  .info-row {
+    justify-content: center;
+  }
+  .info-row:nth-of-type(3) {
+    position: inherit;
+  }
+  .leafs {
+    width: 30vw;
+  }
+
+  .shuttle-service-text {
+    width: 48vw;
+    margin: 0;
+  }
+
+  .map2 > img {
+    width: 100%;
+  }
+
+  footer{
+    flex-direction: column;
+    height: 33vw;
+  }
+
+  .footer-links{
+    font-size: 2.75vw;
+  }
 }
