@@ -1,11 +1,12 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-$color-one: #8ea998;
-$color-two: #e7dfae;
-$color-three: #c58e4d;
-$color-four: #978d4f;
+$color-one: #a5bbcf;
+$color-two: #ffffff;
+$color-three: #13437f;
+$color-four: #8e5434;
 $color-five: #4b3414;
-$color-six: #d9d9d9;
+$color-six: #961f20;
+$color-seven: #000000;
 
 body {
   background-color: #d9d9d9;
@@ -13,7 +14,7 @@ body {
 
 header {
   background-color: $color-one;
-  height: 29vw;
+  height: 31vw;
   padding: 0 !important;
   margin: 0 0 0 0;
   overflow-x: clip;
@@ -25,7 +26,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 3vw 0 0 0;
 }
 
 p {
@@ -36,60 +36,43 @@ h2 {
   font-size: 3vw;
   margin: 0;
 }
-.van-container {
-  display: flex;
-  align-content: flex-start;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  z-index: 1;
-  right: -5px;
-  position: absolute;
-  top: -9px;
-}
-
-.van {
-  height: 27vw;
-  display: flex;
-}
 
 .title {
-  z-index: 2;
-  background-color: #8ea998;
-  top: 0px;
-  position: absolute;
-  width: 65vw;
-  height: 24vw;
-  left: 0vw;
+  background-color: $color-one;
   display: flex;
-  padding: 0 0 5vw 4vw;
+}
+
+.title-container {
+  flex-grow: 1;
+  align-content: center;
+  justify-items: center;
 }
 
 .title > h1 {
-  padding: 2vw 0 0 0;
-  font-size: 5vw;
-  color: $color-two;
+  padding: 5.5vw 0 0 0.5vw;
+  font-size: 6vw;
+  font-weight: 800;
+  color: $color-seven;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.van-fade {
-  width: 17vw;
-  height: 25vw;
-  background-image: linear-gradient(
-    to left,
-    rgba(255, 0, 0, 0),
-    #8ea998b0,
-    #8ea998
-  );
-  position: relative;
-  top: -15px;
-  right: -23.5vw;
-  z-index: 3;
+.title-container > h2 {
+  font-weight: 600;
+  font-size: 1.7vw;
+}
+
+.row-one {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .layered {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  height: inherit;
 }
 
 .layered > * {
@@ -107,12 +90,9 @@ h2 {
 }
 
 .info-bar {
-  z-index: 5;
   height: 9vw;
   width: 62vw;
   background-color: $color-three;
-  position: relative;
-  top: 11vw;
   align-content: center;
   justify-self: center;
   padding: 0 14px;
@@ -129,18 +109,22 @@ h2 {
 
 .circle-svg {
   padding: 0;
-  flex: 0 0 7vw;
+  flex: 0 0 6vw;
 }
 
 .info-bar p {
   margin: 0;
   color: $color-two;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 main {
-  background-color: $color-six;
-  margin: 3vw 0 0 0;
+  background-image: url("../img/Group 3.jpg");
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  justify-content: space-around;
+  padding: 4vw;
 }
 
 .info-box {
@@ -157,7 +141,12 @@ main {
 }
 .download-box {
   width: 42vw;
-  height: 11vw;
+  height: 12vw;
+  padding: 2vw;
+}
+
+.download-box > h4 {
+  text-align: center;
 }
 
 .download-btn {
@@ -165,19 +154,14 @@ main {
 }
 
 h4 {
-  color: $color-four;
-  font-size: 2vw;
-}
-
-main > div {
-  padding: 3vw 0;
+  color: $color-five;
+  font-size: 1.5vw;
 }
 
 .ride-w-friends {
   width: 49vw;
   height: 22vw;
-  margin: 0 0 0 4vw;
-  padding: 26px;
+  padding: 2vw;
 }
 
 .ride-w-friends > .info-box-title {
@@ -189,7 +173,7 @@ main > div {
 }
 
 .info-box-title > svg {
-  flex: 0 0 13vw;
+  flex: 0 0 11vw;
 }
 
 .info-box-title {
@@ -223,12 +207,21 @@ main > div {
   height: 14vw;
   width: 22vw;
   color: $color-two;
-  background-color: $color-three;
+  background-color: $color-six;
   border-radius: 4px;
   z-index: 2;
   display: flex;
-  padding: 0 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap:wrap;
 }
+
+.price-box > p{
+color: #e7dfae;
+font-size: 3vw;
+}
+
 .price-box > div:nth-child(1) {
   font-size: 15vw;
   font-weight: 600;
@@ -255,7 +248,7 @@ main > div {
 }
 
 .map > img {
-  width: 51vw;
+  width: 49vw;
 }
 
 .service-info {
@@ -263,28 +256,47 @@ main > div {
   height: 34vw;
   position: absolute;
   right: 0;
-  padding: 0 30px 0 100px;
+  padding: 0 30px 0 158px;
 }
 
 .service-info > .info-box-title {
-  padding: 0 5vw 0 0;
+  padding: 0 4vw 0 0;
 }
 
-.positioning{
+.positioning {
   position: relative;
+  margin-top: 3vw;
 }
 
 .footer-links {
   color: $color-two;
   text-align: center;
   font-size: 1.75vw;
+  display: flex;
+  flex-direction: column;
 }
+
+.footer-links > a {
+  text-decoration: none;
+  color: black;
+}
+
 #phone {
   display: none;
 }
 
 #computer {
   display: flex;
+}
+
+.description {
+  width: 48vw;
+  padding: 3vw;
+  margin-top: 3vw;
+}
+
+.description > .info-box-title {
+  margin-bottom: 2vw;
 }
 
 @include media-breakpoint-up(xxl) {
@@ -430,6 +442,11 @@ main > div {
 }
 
 @include media-breakpoint-down(md) {
+
+  header{
+    height: fit-content;
+  }
+
   #phone {
     display: flex;
   }
@@ -440,7 +457,14 @@ main > div {
 
   .title {
     height: 29vw;
-    padding: 0 0 5vw 0;
+    display: flex;
+    align-items: end;
+    padding: 0;
+  }
+
+  .title-container > h2 {
+    font-size: 3vw;
+    margin: 2vw 0;
   }
 
   .grey-bar {
@@ -561,12 +585,20 @@ main > div {
     width: 100%;
   }
 
-  footer{
+  .description {
+    width: fit-content;
+  }
+
+  .description > p {
+    font-size: 16px;
+  }
+
+  footer {
     flex-direction: column;
     height: 33vw;
   }
 
-  .footer-links{
+  .footer-links {
     font-size: 2.75vw;
   }
 }
