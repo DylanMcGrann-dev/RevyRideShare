@@ -290,12 +290,16 @@ font-size: 3vw;
 }
 
 .description {
-  width: 48vw;
+  width: 43vw;
   padding: 3vw;
-  margin-top: 3vw;
 }
 
-.description > .info-box-title {
+.description-wide{
+  width: 91vw;
+  padding: 3vw;
+}
+
+.description, .description-wide > .info-box-title {
   margin-bottom: 2vw;
 }
 

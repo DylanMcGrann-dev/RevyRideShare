@@ -1,4 +1,4 @@
-import map from "../img/map-route.jpg";
+import map from "../img/zoning map.png";
 import googleDwnLoad from "../img/google-play.png";
 import appleDwnLoad from "../img/app-store.png";
 import "../style/App.scss";
@@ -373,8 +373,7 @@ function MainContent() {
             {/* <div>6</div>
 						<div>.99</div> */}
           </div>
-          <div className="info-box price-info">Single Fare
-					</div>
+          <div className="info-box price-info">Single Fare</div>
         </div>
       </div>
       <div id="phone" className="info-row">
@@ -382,8 +381,11 @@ function MainContent() {
           <img src={map}></img>
         </div>
       </div>
-      <div id="computer" className="col positioning info-row ">
-        <div className="map">
+      <div id="computer" className="col info-row ">
+        <div>
+          <img src={map}></img>
+        </div>
+        {/* <div className="map">
           <img src={map}></img>
         </div>
         <div className="info-box service-info">
@@ -423,7 +425,7 @@ function MainContent() {
             we’re helping make Revelstoke more connected and accessible
             year-round.
           </p>
-        </div>
+        </div> */}
       </div>
       <div id="phone" className="info-row">
         <div className="info-box-row">
@@ -461,25 +463,102 @@ function MainContent() {
       <div className="info-row">
         <div className="info-box description">
           <div className="info-box-title" style={{ justifyContent: "center" }}>
-            <h2>Revy Rides Ltd.</h2>
+            <h2>How does it work</h2>
           </div>
           <p>
-            Revelstoke’s local on-demand shuttle service, built to make getting
-            around our mountain town simple, affordable, and stress-free.
-            Whether you’re a tourist visiting Revelstoke Mountain Resort, a
-            seasonal worker commuting to your job, or a local heading downtown,
-            Revy Rides is the easiest way to travel. Think of us as the perfect
-            blend of public transit and rideshare—door-to-door convenience with
-            flat-rate pricing you can trust. With the Revy Rides app, booking a
-            ride is quick and easy. Open the app, enter your destination, and
-            request a ride in seconds. Your driver will pick you up at your door
-            and drop you exactly where you want to go. No waiting at bus stops,
-            no expensive taxi fares, and no worrying about parking. Our shuttle
-            service is designed for Revelstoke’s adventure lifestyle. Catch a
-            reliable ride to the ski hill on powder days, transport for biking
-            and hiking trips, or grab a safe late-night shuttle after exploring
-            downtown. With drivers who live here and know the area, you’ll get
-            friendly, dependable service.
+            The convenience of door-to-door ride-hail meets the pricing style of
+            public transport!<br></br>
+            <br></br>
+            Step 1: Download the Revy Rides app from your device app store**.
+            <br></br>
+            <br></br>
+            Step 2: Create an account in the app (no payment details are
+            required anywhere in our app. All payments are made when boarding
+            our vehicles).<br></br>
+            <br></br>
+            Step 3: Enter your pickup location, destination, and the number of
+            people in your group. The app will give you an estimated time until
+            your pickup.<br></br>
+            <br></br>
+            Step 4: When you are next in line to be picked up, the app will show
+            your vehicle on the map along with the estimated remaining time
+            until the driver arrives. Get ready and make sure you are somewhere
+            the driver can clearly see you.<br></br>
+            <br></br>
+            Step 5: As you board, confirm the name used for your ride and how
+            many passengers you have. The driver will let you know the total
+            cost and you can pay by cash or card.<br></br>
+            <br></br>
+            Step 6: You will be dropped off at your destination! Easy as that!
+            Just remember, we do function a bit like a public transport bus, so
+            other passengers may get on and off before you reach your
+            destination.<br></br>
+            <br></br>
+            **NOTE – if you don’t use mobile phone apps, you can also give us a
+            call to request a ride and our team will input it for you and give
+            you an approximate ETA. In this case, we do still need to get a
+            phone number from you so that we can give you a call if anything
+            changes or our driver is trying to find you when it’s your turn to
+            be picked up.
+          </p>
+        </div>
+        <div className="info-box description">
+          <div className="info-box-title" style={{ justifyContent: "center" }}>
+            <h2>Who we are</h2>
+          </div>
+          <p>
+            Revy Rides is a new, locally conceived and owned transport company.{" "}
+            <br></br>
+            <br></br>
+            Our goal: Making Revy more accessible and affordable in a
+            sustainable way. <br></br>
+            <br></br>
+            When a town’s popularity booms like Revy’s has, it’s extremely hard
+            for local infrastructure to keep up with demand and this often
+            damages the small-town lifestyle for locals. With a ski resort
+            that’s a rising star in the world of powder hunters, transport and
+            parking around town has become a key challenge, as well as
+            affordability in general. Revy Rides seeks to help fill that gap
+            with tailored transport services that don’t rely on fixed
+            route/fixed schedules, but are still affordable. We aim to do this
+            while keeping the business as green and local as possible. This is
+            why we use all-electric vehicles as much as possible, with limited
+            petrol backups, and why we use other local businesses and
+            professionals ourselves at every opportunity.
+          </p>
+        </div>
+      </div>
+      <div id="computer" className="info-row">
+        <div className="info-box description-wide">
+          <div className="info-box-title" style={{ justifyContent: "center" }}>
+            <h2>Service Schedule</h2>
+          </div>
+          <p>
+          How do I know which fare I will be charged?<br></br><br></br>
+Fares are determined based on which zone your pickup and drop off locations are in. See our zone map showing our full service area, highlighting the two zones. If both pickup and drop off locations are in Zone 1, you will pay a Zone 1 based fare. If either your pickup or your drop off (or both) locations are in Zone 2, you will pay a Zone 2 based fare (even if one of your pickup or drop off locations are in Zone 1).<br></br><br></br>
+We know that no pricing structure is perfect, but we hope that this one will strike a good balance between simplicity of pricing and the fairness of what we charge relative to how far you travel.<br></br><br></br>
+
+Once I get picked up, will I be taken straight to my destination?<br></br><br></br>
+Not necessarily. In fact, if the town is busy, this would be unlikely unless you are travelling a very short distance. In order to keep our prices as low as possible, we rely on our vehicles following optimal routing between all requested rides. This is why other riders might be picked up and dropped off before you reach your destination.<br></br><br></br>
+But don’t worry! Your travel time should be relatively comparable with a typical public bus service, if not quicker, even in busy times. Our vehicles don’t have too many seats, we have a few of them, and our town isn’t huge, so it won’t be too long before you’re disembarking!<br></br><br></br>
+
+What about outdoor gear, can I bring that with me?<br></br><br></br>
+In winter, our vans fitted with ski and snowboard racks at the rear of the vehicle. Simply drop your skis or board there before getting on board. If the racks are full, we have a limited amount of additional space behind the back row of seats, accessible from the rear doors. In the worst-case scenario, bring the gear on board, but please be very mindful of other passengers and keep a firm hold of your equipment inside the van.<br></br><br></br>
+In summer, we will have a local company build us custom racks for mountain bikes as well. Just make a note when you request your ride to let us know how many bikes you have with you, because for now, we won’t be able to accommodate bikes for 100% of passengers at the same time.<br></br><br></br>
+If you have other larger equipment that you’d love to bring with you – email us your ideas! If there’s demand for more specialised equipment, we’ll get to work finding a solution!<br></br><br></br>
+
+I don’t use applications on my phone. Can I still use Revy Rides?<br></br><br></br>
+Absolutely! Although the app is the most streamlined and efficient way to hail a ride with us, it’s not the only way. You can simply give us a call, and we’ll input your ride request.<br></br><br></br>
+This does mean however that you won’t get live updates about how far away your driver is, so you will need to keep a closer eye on your pick up location and be ready to step outside and greet your driver when they arrive. When we get your details, we will require a phone number so that we can give you a call if anything goes wrong or if our driver can’t find you.<br></br><br></br>
+
+What if my pickup location or drop off destination are just outside your service area?<br></br><br></br>
+In order to remain efficient and cost effective, we need to draw the line somewhere (literally, on a map) with our service area. This does mean that some people might end up in the frustrating situation of being slightly outside of our reach, or wish that we could take them somewhere a bit further out of town.<br></br><br></br>
+We are still very new, so our advice is definitely to get in touch and let us know! If we discover there is more demand in those areas, or if the business grows enough, we will definitely look to expand our service.<br></br><br></br>
+
+I have a large group that wants to get to hiking or biking trails further out of town. Can you help with that?<br></br><br></br>
+Being locals ourselves, we do know there are lots of extremely popular locations that are “just that bit further out of town”, particularly in the warmer months.<br></br><br></br>
+If we are at capacity servicing transport in and around town (especially likely during the snow season) we probably won’t be able to assist as all our vehicles will be operating full time with more local rides.<br></br><br></br>
+However, there’s never any harm in asking! It may mean booking out an entire vehicle, and we will need to work with you to come up with fair pricing but by all means, get in touch and we will work with you to find a solution.<br></br><br></br> 
           </p>
         </div>
       </div>
@@ -492,7 +571,7 @@ function Footer() {
     <footer>
       <div className="footer-links">
         <div>Contact Information</div>
-        <a className="link" href="">
+        <a className="link" href="https://www.facebook.com/share/1PqBjmSe3u/?mibextid=wwXIfr">
           Facebook
         </a>
         <a className="link" href="https://www.instagram.com/revy.rides/">
@@ -502,10 +581,10 @@ function Footer() {
           Tiktok
         </a>
       </div>
-      <div>
+      {/* <div>
         <img src={googleDwnLoad} alt="google download image"></img>
         <img src={appleDwnLoad} alt="app store download image"></img>
-      </div>
+      </div> */}
     </footer>
   );
 }
